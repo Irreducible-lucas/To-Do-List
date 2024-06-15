@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  min-width: 100vh;
+  background: linear-gradient(135deg, purple, blue);
+  padding: 10%
+}
+.container1 {
+ background: white;
+ width: 100%;
+ border-radius: 5px;
+ padding:40px 30px 70px;
+}
+
+.container1 h1{
+  color: #002765;
+}
+.input-el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  background-color: #edeef0;
+  border-radius: 40px;
+  padding: 2px;
+  margin-bottom: 20px;
+  
+}
+
+.input-el input{
+  flex: 1;
+  border: none;
+  outline: 0;
+  background: transparent;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 14px;
+  margin-right: 10px;
+}
+
+.input-el button{
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: red;
+  font-size: 16px;
+  padding: 16px 50px;
+  cursor: pointer;
+
+}
+
+ul li{
+  list-style: none;
+  font-size: 1rem;
+  padding: 12px 8px 12px 55px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width:  28px;
+  border-radius: 50%;
+  background-image:url(radio.png) ;
+  background-size: cover;
+  background-position: center;
+  top:8px;
+  left: 6px;
+}
+
+ul li.checked{
+  color: black;
+  text-decoration: line-through red;
+
+}
+
+ul li.checked::before{
+  background-image:url(check-mark.png) ;
+  background-color: red;
+  background-size: 40px;
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  border-radius: 50%;
+
+}
+ul li span:hover{
+background-color: #edeef0;
+}
